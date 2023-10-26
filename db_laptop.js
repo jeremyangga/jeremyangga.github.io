@@ -6,7 +6,8 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "Intel i5",
         RAM : "16GB",
-        Storage : "128GB"
+        Storage : "128GB",
+        stok : 5
         },
         { nama_laptop : "Asus ROG Zephyrus G14",
         harga : 22_800_000,
@@ -14,7 +15,8 @@ let laptopObj = {
         tipe: "Gaming",
         CPU : "AMD Ryzen 9",
         RAM : "8GB",
-        Storage : "1TB"
+        Storage : "1TB",
+        stok : 5
         },
         { nama_laptop : "Asus Zenbook S 13 OLED",
         harga : 21_000_000,
@@ -22,7 +24,8 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "Intel i7",
         RAM : "32GB",
-        Storage : "1TB"
+        Storage : "1TB",
+        stok : 5
         }],
         
         Apple: [
@@ -32,7 +35,8 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "M2",
         RAM : "8GB",
-        Storage : "512GB"
+        Storage : "512GB",
+        stok : 3
         },
         { nama_laptop : "Apple MacBook Pro 14 (2021)",
         harga : 35_985_000,
@@ -40,7 +44,8 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "M1 Pro",
         RAM : "16GB",
-        Storage : "512GB"
+        Storage : "512GB",
+        stok : 2
         }],
         
         Dell : [
@@ -50,7 +55,8 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "Intel i7",
         RAM : "8GB",
-        Storage : "512GB"
+        Storage : "512GB",
+        stok : 15
         },
         { nama_laptop : "Dell Alienware m15",
         harga : 19_500_000,
@@ -58,7 +64,8 @@ let laptopObj = {
         tipe: "Gaming",
         CPU : "Intel i7",
         RAM : "16GB",
-        Storage : "512GB"
+        Storage : "512GB",
+        stok : 6
         }],
         
         Lenovo : [
@@ -68,7 +75,8 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "Intel i7",
         RAM : "16GB",
-        Storage : "512GB"
+        Storage : "512GB",
+        stok : 2
         },
         { nama_laptop : "Lenovo Legion 5 Pro",
         harga : 18_720_000,
@@ -76,8 +84,17 @@ let laptopObj = {
         tipe: "Bisnis",
         CPU : "AMD Ryzen 7",
         RAM : "16GB",
-        Storage : "1TB"
+        Storage : "1TB",
+        stok : 2
         }]
 }
 
-window.localStorage.setItem("laptopObj", JSON.stringify(laptopObj));
+function saveToLocal(){
+    window.localStorage.setItem("laptopObj", JSON.stringify(laptopObj));
+}
+
+function showObject(){
+    return laptopObj;
+}
+
+export {showObject, saveToLocal};
