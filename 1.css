@@ -1,0 +1,46 @@
+/* navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 80px;
+    color: white;
+    background-color: green;
+    box-shadow: 1px 1px 5px 0 black;
+  }
+  .navbar h1 {
+    font-size: 55px;
+    font-family: fantasy;
+    margin-top: -15px;
+    margin-left: 40px;
+  }
+  .navbar-tabs {
+    list-style: none;
+    margin-right: 40px;
+  }
+  .navbar-tabs li {
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 15px 10px;
+    margin: -1px 5px 0 0;
+    display: inline-block;
+  }
+  .navbar-tabs li:hover {
+    background-color: rgba(255, 255, 255, 0.274);
+  }
+  
+  /* iklan */
+  .iklan {
+    box-shadow: 2px 2px 5px 0 black;
+    background-color: green;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 100px;
+    padding-top: 17px;
+    border-radius: 10px;
+}

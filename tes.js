@@ -106,12 +106,5 @@ let laptopObj = {
         }]
 }
 
-function saveToLocal(){
-    window.localStorage.setItem("laptopObj", JSON.stringify(laptopObj));
-}
-
-function showObject(){
-    return laptopObj;
-}
-
-// export {showObject, saveToLocal};
+let merek = 'Asus';
+console.log(laptopObj[merek]);
