@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Tangerine&display=swap"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+      <span>Beranda</span>
+    </a>
+  </nav>
+  <main>
+    <div id="orders-list" class="order-list">
+      <!-- <div id="tmp-order" class="order-item">
+        <div class="order-header">
+          <h3 id="nama-laptop" class="capitalize">Asus Zenbook S 13 OLED</h3>
+        </div>
+        <div class="item-laptop">
+          <div>
+            <img id="gambar-laptop" class="laptop" src="https://dlcdnwebimgs.asus.com/gain/af603f9f-03e4-4a56-b632-598b6e15c509/">
+          </div>
+          <div class="column-2">
+            <div class="row-2">
+                <div>Jumlah: <span id="quantity">11</span></div>
+            </div>
+            <div class="row-3">
+              <div id="harga">Harga: Rp2.000.000</div>
+            </div>
+            <button id="delete" onclick="initiateOrderDeletion(-1)">Hapus</button>
+            </div>
+          </div>
+        </div> -->
+    </div>
+    <div class="checkout-container" id="checkout-container">
+      
+      <!-- <div id="checkout-info">
+        <span>Total Belanja</span>
+        <span id="checkout-harga">Rp50.000.000</span>
+      </div>
+      <div>
+        <button id="checkout-button" onclick="klikCheckout()">Checkout</button>
+      </div> -->
+    </div>
+  </main>
+  <!-- <div id="order-popup" class="popup-wrapper hidden">
+    <div class="overlay"></div>
+    <div class="popup-box">
+      <div class="popup-text">Hapus item ini?</div>
+      <div class="popup-button-wrapper">
+        <button onclick="deleteKonfirmasi()">Ya</button>
+      </div>
+    </div>
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="db_laptop.js"></script>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+  
+</body>
+
+</html>

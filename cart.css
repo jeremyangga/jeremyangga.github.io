@@ -1,0 +1,171 @@
+nav {
+    max-width: 80%;
+    margin: 30px auto;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  nav > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.02em;
+    transition: color 0.15s ease;
+  }
+
+  nav > a > * {
+    margin-right: 10px;
+  }
+
+  #orders-list > div {
+    margin-bottom: 30px;
+  }
+
+  .order-item {
+    display: inline-block;
+  }
+
+  main {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+
+  .order-header {
+    display: flex;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+  .order-header h2 {
+    width: 200px;
+    margin: 0;
+    padding-left: 30px;
+    text-align: center;
+  }
+
+  #deleteBarang {
+      width: 100px;
+      padding: 12px 12px;
+      background-color: #fd0d0d;
+      border: 1px solid #fd0d0d;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      flex: 1 0 auto;
+  }
+
+  img.laptop {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .item-laptop {
+    display: flex;
+  }
+
+  .column-2 {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .column-2 > div:nth-child(2) {
+    margin: 15px 0;
+    
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    justify-content: center
+  }
+
+  #checkout-container {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #checkout-info {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1em;
+  }
+
+  #checkout-info > span {
+    padding: 0 20px;
+  }
+
+  #checkout-harga {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  #checkout-button {
+    width: 100px;
+    padding: 12px 12px;
+    background-color: #0dfd3d;
+    border: 1px solid #0dfd3d;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    flex: 1 0 auto;
+  }
+  .popup-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-wrapper.hidden {
+    display: none;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 4;
+  }
+
+  .popup-box {
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    z-index: 5;
+    font-size: 1.1em;
+  }
+
+  .popup-text {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .popup-button-wrapper {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .popup-button-wrapper > button {
+    padding: 10px 20px;
+    background-color: rgb(25, 224, 255);
+    border: 0;
+    border-radius: 5px;
+  }
