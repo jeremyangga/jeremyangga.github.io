@@ -1,6 +1,7 @@
 let dataLaptop = laptopObj;
 let keysDataLaptop = Object.keys(dataLaptop).length;
 let merekLaptop = '';
+let countClick = 0;
 
 // $.merekJquery = function() {
 //     alert("jQuery");
@@ -128,6 +129,7 @@ let outputBelanja = []
 
 function toKeranjang(id){
     // idToKeranjang = id;
+    document.getElementById('countCart').innerHTML = countClick;
     console.log(idToKeranjang, "<<<<");
     // console.log(dataLaptop["Asus"][id])
     for(let keys in dataLaptop){
@@ -145,6 +147,8 @@ function toKeranjang(id){
                         gambar: dataLaptop[keys][i]["url"] 
                     }
                 }
+                    countClick++;
+                    console.log(countClick,'---');
                 // outputBelanja.push(listBelanja)
                 // console.log(listBelanja);
             }
